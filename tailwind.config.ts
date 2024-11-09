@@ -11,7 +11,7 @@ export default {
 		extend: {
 			fontFamily: {
 				cookie: ['var(--font-cookie)'],
-			  },
+			},
 			colors: {
 				'vulcan': {
 					'50': '#f0f3ff',
@@ -26,6 +26,20 @@ export default {
 					'900': '#0a2170',
 					'950': '#020617',
 				},
+				'woodsmoke': {
+					'50': '#f0f2ff',
+					'100': '#e0e4fe',
+					'200': '#bac6fd',
+					'300': '#7d97fc',
+					'400': '#3862f8',
+					'500': '#0e3de9',
+					'600': '#0226c7',
+					'700': '#031ea1',
+					'800': '#071d85',
+					'900': '#0c1b6e',
+					'950': '#010209',
+				},
+
 
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',

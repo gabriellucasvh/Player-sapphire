@@ -5,7 +5,7 @@ import Section from '@/components/specific/Section'
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-woodsmoke-950 text-white min-h-screen'>  
       <Navbar />
       <Section />
       <Player />

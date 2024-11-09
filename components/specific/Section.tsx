@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Section = () => {
     return (
-        <div className='bg-vulcan-900/20 max-w-72 h-[510px]'>
+        <div className='bg-slate-950 max-w-72 h-[510px] border-r border-vulcan-700'>
             <div className='p-4'>
                 <h1 className='flex items-center justify-center font-semibold text-xl mb-2'>
                     Biblioteca

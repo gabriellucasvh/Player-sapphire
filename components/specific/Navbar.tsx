@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Navbar = () => {
   return (
-    <div className='max-h-20 min-h-20 w-full bg-vulcan-900/20 border-b border-vulcan-700 flex justify-between items-center px-7'>
+    <div className='max-h-20 min-h-20 w-full bg-slate-950 border-b border-vulcan-700 flex justify-between items-center px-7'>
       <Link href="/">
         <p className='text-4xl font-cookie flex items-center gap-2'>
           <Image 
@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <div className='flex items-center gap-2 relative'>
           <input
-            className='outline-none bg-vulcan-900/20 shadow-inner p-2 pl-8 rounded-full border-2 border-blue-900'
+            className='outline-none bg-slate-950 shadow-inner p-2 pl-8 rounded-full border-2 border-blue-900'
             type="text"
             placeholder='O que quer ouvir agora?'
           />

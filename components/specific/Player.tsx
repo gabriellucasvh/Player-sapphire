@@ -8,7 +8,7 @@ import { Slider } from "@/components/ui/slider"
 
 const Player = () => {
     return (
-        <div className='fixed flex items-center bottom-0 h-28 px-5 w-full bg-vulcan-900/20'>
+        <div className='fixed flex items-center bottom-0 h-28 px-5 w-full bg-slate-950 border-t border-vulcan-700'>
             <div className="flex items-center justify-start w-[450px] h-full gap-2">
                 <div className="w-20 h-20 border rounded-md overflow-hidden flex justify-center items-center">
                     <Image
