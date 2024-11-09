@@ -10,9 +10,16 @@ const Navbar = () => {
         <p className='text-4xl font-cookie'>Sapphire</p>
       </Link>
       <div className='flex flex-row items-center gap-2'>
-        <Link href="/" className='bg-vulcan-900/40 border-2 border-blue-900 rounded-full px-3 py-2 flex items-center gap-2 hover:bg-vulcan-900/60 hover:text-vulcan-400 transition-colors duration-300'>  
-          <Home className='h-5 w-5' />Menu
-        </Link>
+        <div className='relative group flex flex-col'>
+          <Link href="/" className='bg-vulcan-900/40 border-2 border-blue-900 rounded-full px-3 py-2 flex items-center gap-2'>
+            <Home className='h-5 w-5' />Menu
+          </Link>
+          <span className="absolute ml-1 top-12 w-max px-2 py-1 text-xs text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+            Página inicial
+          </span>
+        </div>
+
+
         <div className='flex items-center gap-2 relative'>
           <input
             className='outline-none bg-vulcan-900/20 shadow-inner p-2 pl-8 rounded-full border-2 border-blue-900'
@@ -22,17 +29,28 @@ const Navbar = () => {
           <button type='submit' className='absolute left-2'>
             <Search className='w-5 h-5' />
           </button>
-          <Link href="/" className='bg-vulcan-900/40 border-2 border-blue-900 rounded-full p-2 flex items-center ml-2 hover:bg-vulcan-900/60 hover:text-vulcan-400 transition-colors duration-300'>
-            <Compass className='h-5 w-5' />
-          </Link>
+          <div className="relative group">
+            <Link href="/" className='bg-vulcan-900/40 border-2 border-blue-900 rounded-full p-2 flex items-center ml-2'>
+              <Compass className='h-5 w-5' />
+            </Link>
+            <span className="absolute top-11 mb-1 w-max px-2 py-1 text-xs text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+              Explorar
+            </span>
+          </div>
         </div>
       </div>
       <div className='flex flex-row items-center gap-4'>
-        <Bell className='h-5 w-5' />
-        <Avatar className='border-2 border-vulcan-400'>
+        <div className="relative group">
+          <Link href="/">
+            <Bell className='h-5 w-5' />
+          </Link>
+        </div>
+      <Link href="/">	
+        <Avatar>
           <AvatarImage src="https://github.com/gabriellucasvh.png" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
+      </Link>
       </div>
     </div>
   )
